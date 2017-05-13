@@ -1,4 +1,4 @@
-import Elixir from 'laravel-elixir';
+import Elixir from '@wpdevops/elixir';
 
 let _;
 let browserSync;
@@ -53,7 +53,7 @@ function getOptions(options) {
             config.appPath + '/**/*.php',
             config.get('public.css.outputFolder') + '/**/*.css',
             config.get('public.js.outputFolder') + '/**/*.js',
-            config.get('public.versioning.buildFolder') + '/rev-manifest.json',
+            config.get('public.versioning.buildFolder') + '/manifest.json',
             config.viewPath + '/**/*.php'
         ],
 

@@ -1,11 +1,12 @@
-# Laravel Elixir Browsersync Support
+# WpDevOps Elixir Browsersync Support
 
-This extension brings Browsersync support to Laravel Elixir version 6 and up. Prior to that release, Browsersync was baked in.
+First ensure, that you're WpDevOps Elixir version is up to date.
+
 
 ## Step 1: Install
 
 ```bash
-npm install laravel-elixir-browsersync-official --save-dev
+npm install @wpdevops/elixir-browsersync --save-dev
 ```
 
 ## Step 2: Use It
@@ -18,8 +19,8 @@ elixir(function(mix) {
 });
 ```
 
-Once you run `gulp watch`, access your web application using port 3000 to enable browser syncing: `http://homestead.app:3000`. 
-If you're using a domain other than `homestead.app` for local development (likely), you may pass an array of options as the first argument to the browserSync method:
+Once you run `gulp watch`, access your web application using port 3000 to enable browser syncing: `http://wpdevops.dev:3000`. 
+If you're using a domain other than `wpdevops.dev` for local development (likely), you may pass an array of options as the first argument to the browserSync method:
 
 ```js
 elixir(function(mix) {
@@ -28,3 +29,8 @@ elixir(function(mix) {
   });
 });
 ```
+
+---
+
+This package was originally ([laravel-elixir-browsersync-official](https://github.com/JeffreyWay/laravel-elixir-browsersync-official)) 
+written by [Jeffrey Way](https://github.com/JeffreyWay)
