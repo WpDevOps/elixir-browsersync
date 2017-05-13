@@ -1,6 +1,6 @@
 {
   "name": "@wpdevops/elixir-browsersync",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WpDevOps Elixir Browsersync integration.",
   "main": "dist/index.js",
   "scripts": {
