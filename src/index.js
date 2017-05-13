@@ -51,9 +51,9 @@ function getOptions(options) {
     return _.extend({
         files: [
             config.appPath + '/**/*.php',
-            config.get('public.css.outputFolder') + '/**/*.css',
-            config.get('public.js.outputFolder') + '/**/*.js',
-            config.get('public.versioning.buildFolder') + '/manifest.json',
+            config.get('dist.css.outputFolder') + '/**/*.css',
+            config.get('dist.js.outputFolder') + '/**/*.js',
+            config.get('dist.versioning.buildFolder') + '/manifest.json',
             config.viewPath + '/**/*.php'
         ],
 
