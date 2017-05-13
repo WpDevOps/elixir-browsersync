@@ -36,7 +36,7 @@ Elixir.extend('browserSync', function (options) {
 function loadPlugins() {
     _ = require('underscore');
     browserSync = require('browser-sync').create();
-};
+}
 
 
 /**
@@ -46,14 +46,14 @@ function loadPlugins() {
  * @return {object}
  */
 function getOptions(options) {
-    let config = Elixir.config;
-
+    let config = Elixir.config,
+        versioningBuildFolder = config.get('dist.versioning.buildFolder');
     return _.extend({
         files: [
             config.appPath + '/**/*.php',
             config.get('dist.css.outputFolder') + '/**/*.css',
             config.get('dist.js.outputFolder') + '/**/*.js',
-            config.get('dist.versioning.buildFolder') + '/manifest.json',
+            (versioningBuildFolder ? versioningBuildFolder : '') + 'manifest.json',
             config.viewPath + '/**/*.php'
         ],
 

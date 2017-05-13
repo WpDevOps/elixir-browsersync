@@ -17,7 +17,7 @@
   "author": "Shemi Perez",
   "license": "MIT",
   "dependencies": {
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.18.8",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
